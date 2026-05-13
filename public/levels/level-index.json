@@ -1,0 +1,7 @@
+{
+  "levels": [
+    { "id": "level-1", "name": "La Forêt des Chênes", "unlockCondition": "start" },
+    { "id": "level-2", "name": "Les Ruines Oubliées", "unlockCondition": "complete:level-1" },
+    { "id": "level-3", "name": "Le Pont de l'Ombre", "unlockCondition": "complete:level-2" }
+  ]
+}

@@ -1,0 +1,74 @@
+[     219ms] [LOG] %c %c %c %c %c Phaser v3.90.0 (WebGL | Web Audio) %c https://phaser.io/v390 background: #ff0000 background: #ffff00 background: #00ff00 background: #00ffff color: #ffffff; background: #000000 background: transparent @ http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:8456
+[ 1248773ms] TypeError: Cannot read properties of undefined (reading 'setVelocity')
+    at ArcadeSprite2.setVelocity (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:84486:31)
+    at GymScene._spawnPlayer (http://127.0.0.1:5173/src/scenes/GymScene.ts?t=1778387202288:361:19)
+    at GymScene.create (http://127.0.0.1:5173/src/scenes/GymScene.ts?t=1778387202288:227:10)
+    at SceneManager2.create (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:110814:36)
+    at SceneManager2.loadComplete (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:110745:26)
+    at LoaderPlugin2.emit (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:98:45)
+    at LoaderPlugin2.loadComplete (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:67086:26)
+    at LoaderPlugin2.start (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:66936:28)
+    at SceneManager2.bootScene (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:110728:30)
+    at SceneManager2.start (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:111272:26)
+[ 1254006ms] [LOG] %c %c %c %c %c Phaser v3.90.0 (WebGL | Web Audio) %c https://phaser.io/v390 background: #ff0000 background: #ffff00 background: #00ff00 background: #00ffff color: #ffffff; background: #000000 background: transparent @ http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:8456
+[ 1254166ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5173/favicon.ico:0
+[ 1452371ms] TypeError: Cannot read properties of undefined (reading 'setStrokeStyle')
+    at EditorScene._selectAsset (http://127.0.0.1:5173/src/scenes/EditorScene.ts?t=1778387186184:439:10)
+    at Rectangle2.<anonymous> (http://127.0.0.1:5173/src/scenes/EditorScene.ts?t=1778387186184:370:45)
+    at Rectangle2.emit (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:100:45)
+    at InputPlugin2.processDownEvents (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:59063:34)
+    at InputPlugin2.update (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:58848:41)
+    at InputManager2.updateInputPlugins (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:58140:55)
+    at InputManager2.onMouseDown (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:58278:26)
+    at HTMLCanvasElement.onMouseDown (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:65763:33)
+[ 1455122ms] TypeError: Cannot read properties of undefined (reading 'setStrokeStyle')
+    at EditorScene._selectAsset (http://127.0.0.1:5173/src/scenes/EditorScene.ts?t=1778387186184:439:10)
+    at Rectangle2.<anonymous> (http://127.0.0.1:5173/src/scenes/EditorScene.ts?t=1778387186184:370:45)
+    at Rectangle2.emit (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:100:45)
+    at InputPlugin2.processDownEvents (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:59063:34)
+    at InputPlugin2.update (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:58848:41)
+    at InputManager2.updateInputPlugins (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:58140:55)
+    at InputManager2.onMouseDown (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:58278:26)
+    at HTMLCanvasElement.onMouseDown (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:65763:33)
+[ 1462790ms] TypeError: Cannot read properties of undefined (reading 'setStrokeStyle')
+    at EditorScene._updateModeUI (http://127.0.0.1:5173/src/scenes/EditorScene.ts?t=1778387186184:527:12)
+    at Rectangle2.<anonymous> (http://127.0.0.1:5173/src/scenes/EditorScene.ts?t=1778387186184:458:14)
+    at Rectangle2.emit (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:100:45)
+    at InputPlugin2.processDownEvents (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:59063:34)
+    at InputPlugin2.update (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:58848:41)
+    at InputManager2.updateInputPlugins (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:58140:55)
+    at InputManager2.onMouseDown (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:58278:26)
+    at HTMLCanvasElement.onMouseDown (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:65763:33)
+[ 1493854ms] TypeError: Cannot read properties of undefined (reading 'setVelocity')
+    at ArcadeSprite2.setVelocity (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:84486:31)
+    at GymScene._spawnPlayer (http://127.0.0.1:5173/src/scenes/GymScene.ts?t=1778387202288:361:19)
+    at GymScene.create (http://127.0.0.1:5173/src/scenes/GymScene.ts?t=1778387202288:227:10)
+    at SceneManager2.create (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:110814:36)
+    at SceneManager2.loadComplete (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:110745:26)
+    at LoaderPlugin2.emit (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:98:45)
+    at LoaderPlugin2.loadComplete (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:67086:26)
+    at LoaderPlugin2.start (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:66936:28)
+    at SceneManager2.bootScene (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:110728:30)
+    at SceneManager2.start (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:111272:26)
+[ 1497374ms] [LOG] %c %c %c %c %c Phaser v3.90.0 (WebGL | Web Audio) %c https://phaser.io/v390 background: #ff0000 background: #ffff00 background: #00ff00 background: #00ffff color: #ffffff; background: #000000 background: transparent @ http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:8456
+[ 1497499ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5173/favicon.ico:0
+[17934917ms] [LOG] %c %c %c %c %c Phaser v3.90.0 (WebGL | Web Audio) %c https://phaser.io/v390 background: #ff0000 background: #ffff00 background: #00ff00 background: #00ffff color: #ffffff; background: #000000 background: transparent @ http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:8456
+[17935116ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5173/favicon.ico:0
+[17942822ms] TypeError: Cannot read properties of undefined (reading 'setVelocity')
+    at ArcadeSprite2.setVelocity (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:84486:31)
+    at GymScene._spawnPlayer (http://127.0.0.1:5173/src/scenes/GymScene.ts?t=1778387202288:361:19)
+    at GymScene.create (http://127.0.0.1:5173/src/scenes/GymScene.ts?t=1778387202288:227:10)
+    at SceneManager2.create (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:110814:36)
+    at SceneManager2.loadComplete (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:110745:26)
+    at LoaderPlugin2.emit (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:98:45)
+    at LoaderPlugin2.loadComplete (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:67086:26)
+    at LoaderPlugin2.start (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:66936:28)
+    at SceneManager2.bootScene (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:110728:30)
+    at SceneManager2.start (http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:111272:26)
+[17945465ms] [LOG] %c %c %c %c %c Phaser v3.90.0 (WebGL | Web Audio) %c https://phaser.io/v390 background: #ff0000 background: #ffff00 background: #00ff00 background: #00ffff color: #ffffff; background: #000000 background: transparent @ http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:8456
+[17945634ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5173/favicon.ico:0
+[18604401ms] [LOG] %c %c %c %c %c Phaser v3.90.0 (WebGL | Web Audio) %c https://phaser.io/v390 background: #ff0000 background: #ffff00 background: #00ff00 background: #00ffff color: #ffffff; background: #000000 background: transparent @ http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:8456
+[18604571ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5173/favicon.ico:0
+[20357749ms] [LOG] %c %c %c %c %c Phaser v3.90.0 (WebGL | Web Audio) %c https://phaser.io/v390 background: #ff0000 background: #ffff00 background: #00ff00 background: #00ffff color: #ffffff; background: #000000 background: transparent @ http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:8456
+[20357908ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:5173/favicon.ico:0
+[20514026ms] [LOG] %c %c %c %c %c Phaser v3.90.0 (WebGL | Web Audio) %c https://phaser.io/v390 background: #ff0000 background: #ffff00 background: #00ff00 background: #00ffff color: #ffffff; background: #000000 background: transparent @ http://127.0.0.1:5173/node_modules/.vite/deps/phaser.js?v=0af9e9ca:8456

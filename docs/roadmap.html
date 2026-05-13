@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Roadmap Orion & Sirius</title>
+<style>
+  @page { size: A4; margin: 2cm; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background:#1e1e2e; color:#cdd6f4; padding:40px; max-width:900px; margin:0 auto; }
+  h1 { color:#89b4fa; font-size:32px; border-bottom:2px solid #45475a; padding-bottom:12px; }
+  h2 { color:#b4befe; font-size:22px; margin-top:30px; }
+  h3 { color:#a6adc8; font-size:16px; margin-top:20px; }
+  p, li { line-height:1.6; font-size:14px; }
+  table { width:100%; border-collapse:collapse; margin:16px 0; font-size:13px; }
+  th, td { border:1px solid #45475a; padding:8px; text-align:left; }
+  th { background:#2a2a3c; color:#89b4fa; }
+  tr:nth-child(even) { background:#252535; }
+  code { background:#2a2a3c; padding:2px 6px; border-radius:4px; font-family:monospace; }
+  pre { background:#2a2a3c; padding:12px; border-radius:6px; overflow-x:auto; }
+  .badge { display:inline-block; padding:2px 8px; border-radius:4px; font-size:11px; font-weight:700; }
+  .phase-a { background:rgba(137,180,250,0.15); color:#89b4fa; }
+  .phase-b { background:rgba(166,227,161,0.15); color:#a6e3a1; }
+  .phase-c { background:rgba(249,226,175,0.15); color:#f9e2af; }
+</style>
+</head>
+<body>
+<h1>🚀 Roadmap Orion & Sirius — Le Builder de 2026</h1>
+
+<h2>1. Philosophie du Builder</h2>
+<p><strong>Orion & Sirius</strong> n'est pas qu'un éditeur de niveaux. C'est un <strong>studio de création intégré</strong> pour jeux 2D pixel-art, conçu autour de trois piliers :</p>
+<ol>
+<li><strong>Instantanéité</strong> — Toute modification est visible en temps réel. Pas de compilation, pas de changement de contexte.</li>
+<li><strong>Itération sans friction</strong> — Undo/redo illimité, sauvegardes par slot, playtest en un clic (Tab).</li>
+<li><strong>Créativité guidée</strong> — Templates, systèmes, outils d'animation et de test qui suggèrent plutôt qu'ils n'imposent.</li>
+</ol>
+<p><em>Pourquoi "Orion & Sirius" ?</em> Orion est le chasseur, l'architecte du niveau. Sirius est l'étoile la plus brillante, la vision que le joueur verra. Le builder est le point de rencontre entre les deux.</p>
+
+<h2>2. État actuel (v2.x)</h2>
+<ul>
+<li>Éditeur de niveau hybride Phaser + DOM</li>
+<li>Palette d'assets avec filtres et recherche</li>
+<li>Toolbar avec modes (Stage, Entity, BG, Collision, Select, Delete, Pan)</li>
+<li>Properties panel éditable (position, scale, rotation, tint, collision, HP, etc.)</li>
+<li>Système undo/redo</li>
+<li>Playtest intégré (Tab)</li>
+<li>Test runner interne (5 scénarios)</li>
+<li>Save/load avec 5 slots</li>
+<li>World hub avec sélection de niveaux</li>
+<li>Parallax backgrounds avec profondeur et tint</li>
+<li>Minimap</li>
+</ul>
+
+<h2>3. Features à ajouter — Priorisées</h2>
+
+<h3><span class="badge phase-a">Phase A — Fondation</span></h3>
+<table>
+<tr><th>#</th><th>Feature</th><th>Pourquoi</th></tr>
+<tr><td>A1</td><td>Rebranding complet "Orion & Sirius"</td><td>Identité propre, découplage de l'asset pack Oakwoods</td></tr>
+<tr><td>A2</td><td>Menu principal avec accès Test et Animation</td><td>Centralisation de tous les outils du studio</td></tr>
+<tr><td>A3</td><td>Intégration Playwright E2E dans le menu Test</td><td>Qualité continue, tests visibles pour les non-devs</td></tr>
+<tr><td>A4</td><td>Test dashboard (résultats, historique, couverture)</td><td>Métriques de confiance sur le build</td></tr>
+</table>
+
+<h3><span class="badge phase-b">Phase B — Animation</span></h3>
+<table>
+<tr><th>#</th><th>Feature</th><th>Pourquoi</th></tr>
+<tr><td>B1</td><td>Animation Preview — playback spritesheet</td><td>Vérifier les assets avant placement</td></tr>
+<tr><td>B2</td><td>State Machine Editor — graphe visuel des transitions</td><td>Définir le comportement sans code</td></tr>
+<tr><td>B3</td><td>Timeline / Keyframe Editor</td><td>Cutscenes, events scripts, cinematics</td></tr>
+<tr><td>B4</td><td>Onion Skinning</td><td>Timing d'animation précis</td></tr>
+<tr><td>B5</td><td>Event Tracks — spawn, sons, hitbox</td><td>Synchronisation gameplay/animation</td></tr>
+</table>
+
+<h3><span class="badge phase-c">Phase C — Polish</span></h3>
+<table>
+<tr><th>#</th><th>Feature</th><th>Pourquoi</th></tr>
+<tr><td>C1</td><td>Particle Editor</td><td>FX modernes sans sortir de l'éditeur</td></tr>
+<tr><td>C2</td><td>Sound Event Mapper</td><td>Audio design intégré</td></tr>
+<tr><td>C3</td><td>Export multi-plateforme (JSON, Tiled, PNG atlas)</td><td>Interopérabilité</td></tr>
+<tr><td>C4</td><td>Collaboration — export/import de chunks</td><td>Travail en équipe</td></tr>
+</table>
+
+<h2>4. Architecture cible</h2>
+<pre>
+├──────────────────────────────────────────────────┐
+│              ORION & SIRIUS STUDIO                      │
+├──────────────────────────────────────────────────┤
+│  Main Menu │ Editor │ Test Center │ Animation Lab      │
+└──────────────────────────────────────────────────┘
+</pre>
+
+<h2>5. Pourquoi ces features en 2026</h2>
+<ul>
+<li><strong>Test-first</strong> : Les moteurs modernes intègrent des suites de tests visibles. Un builder sans test intégré est un prototype.</li>
+<li><strong>Animation as Data</strong> : Les state machines et timelines ne sont plus du code, ce sont des assets. Les game designers travaillent sans toucher au code.</li>
+<li><strong>Hybride DOM+Canvas</strong> : Phaser est un moteur de jeu, pas un framework UI. Les panels complexes sont impossibles à maintenir en pur Phaser.</li>
+<li><strong>Instant Playtest</strong> : Le cycle édition → test → édition doit être &lt; 1 seconde. C'est le standard Godot/Unity.</li>
+</ul>
+
+<h2>6. Succès = quoi mesurer</h2>
+<ul>
+<li>Un nouveau niveau est créable en &lt; 5 minutes depuis le menu principal</li>
+<li>Les tests Playwright passent à 100% avant chaque release</li>
+<li>Une animation state machine est configurable sans écrire de code TypeScript</li>
+<li>Le build Vite compile en &lt; 2 secondes</li>
+</ul>
+
+<p style="margin-top:40px; text-align:center; color:#a6adc8; font-size:12px;">
+Orion & Sirius Studio — Document généré le 11 mai 2026
+</p>
+</body>
+</html>

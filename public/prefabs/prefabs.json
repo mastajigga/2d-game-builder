@@ -1,0 +1,102 @@
+{
+  "prefabs": [
+    {
+      "id": "ground-3",
+      "name": "Sol 3 tuiles (576px)",
+      "icon": "🟫",
+      "entities": [
+        { "assetId": "platform-mossy", "x": 0, "y": 0 },
+        { "assetId": "platform-mossy-2", "x": 192, "y": 0 },
+        { "assetId": "platform-mossy-3", "x": 384, "y": 0 }
+      ]
+    },
+    {
+      "id": "ground-5",
+      "name": "Sol 5 tuiles (960px)",
+      "icon": "🟫🟫",
+      "entities": [
+        { "assetId": "platform-mossy", "x": 0, "y": 0 },
+        { "assetId": "platform-mossy-2", "x": 192, "y": 0 },
+        { "assetId": "platform-mossy-3", "x": 384, "y": 0 },
+        { "assetId": "platform-mossy-4", "x": 576, "y": 0 },
+        { "assetId": "platform-mossy-5", "x": 768, "y": 0 }
+      ]
+    },
+    {
+      "id": "ground-8",
+      "name": "Sol 8 tuiles (1536px)",
+      "icon": "🟫🟫🟫",
+      "entities": [
+        { "assetId": "platform-mossy", "x": 0, "y": 0 },
+        { "assetId": "platform-mossy-2", "x": 192, "y": 0 },
+        { "assetId": "platform-mossy-3", "x": 384, "y": 0 },
+        { "assetId": "platform-mossy-4", "x": 576, "y": 0 },
+        { "assetId": "platform-mossy-5", "x": 768, "y": 0 },
+        { "assetId": "platform-mossy-6", "x": 960, "y": 0 },
+        { "assetId": "platform-mossy-7", "x": 1152, "y": 0 },
+        { "assetId": "platform-mossy-8", "x": 1344, "y": 0 }
+      ]
+    },
+    {
+      "id": "enemy-patrol",
+      "name": "Patrouille ennemi",
+      "icon": "🍄",
+      "entities": [
+        { "assetId": "platform-mossy", "x": 0, "y": 0 },
+        { "assetId": "platform-mossy-2", "x": 192, "y": 0 },
+        { "assetId": "platform-mossy-3", "x": 384, "y": 0 },
+        { "assetId": "enemy-mushroom", "x": 192, "y": -100, "name": "Patrouilleur", "patrolMin": -64, "patrolMax": 64 }
+      ]
+    },
+    {
+      "id": "gap-jump",
+      "name": "Saut plateforme",
+      "icon": "🕳️",
+      "entities": [
+        { "assetId": "platform-mossy", "x": 0, "y": 0 },
+        { "assetId": "platform-mossy-2", "x": 192, "y": 0 },
+        { "assetId": "platform-mossy-3", "x": 576, "y": 0 },
+        { "assetId": "platform-mossy-4", "x": 768, "y": 0 },
+        { "assetId": "enemy-mushroom", "x": 384, "y": -50, "patrolMin": -32, "patrolMax": 32 }
+      ]
+    },
+    {
+      "id": "boss-arena",
+      "name": "Arène de boss",
+      "icon": "👑",
+      "entities": [
+        { "assetId": "platform-mossy", "x": 0, "y": 0 },
+        { "assetId": "platform-mossy-2", "x": 192, "y": 0 },
+        { "assetId": "platform-mossy-3", "x": 384, "y": 0 },
+        { "assetId": "platform-mossy-4", "x": 576, "y": 0 },
+        { "assetId": "platform-mossy-5", "x": 768, "y": 0 },
+        { "assetId": "fp-wide-top", "x": 192, "y": -200 },
+        { "assetId": "fp-wide-top", "x": 480, "y": -200 },
+        { "assetId": "enemy-mushroom", "x": 400, "y": -100, "name": "Mini-boss", "hp": 5, "maxHp": 5, "damage": 2, "patrolMin": -80, "patrolMax": 80 }
+      ]
+    },
+    {
+      "id": "vertical-platforms",
+      "name": "Plateformes verticales",
+      "icon": "🪜",
+      "entities": [
+        { "assetId": "fp-wide-top", "x": 0, "y": 0 },
+        { "assetId": "fp-wide-top", "x": 0, "y": -160 },
+        { "assetId": "fp-wide-top", "x": 0, "y": -320 }
+      ]
+    },
+    {
+      "id": "spawn-room",
+      "name": "Zone de spawn",
+      "icon": "🚪",
+      "entities": [
+        { "assetId": "platform-mossy", "x": 0, "y": 0 },
+        { "assetId": "platform-mossy-2", "x": 192, "y": 0 },
+        { "assetId": "platform-mossy-3", "x": 384, "y": 0 },
+        { "assetId": "platform-mossy-4", "x": 576, "y": 0 },
+        { "assetId": "platform-mossy-5", "x": 768, "y": 0 },
+        { "assetId": "spawn-player", "x": 200, "y": -100 }
+      ]
+    }
+  ]
+}

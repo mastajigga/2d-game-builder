@@ -1,0 +1,278 @@
+{
+  "meta": {
+    "name": "Oak Woods Asset Pack",
+    "version": "1.0.0",
+    "author": "brullov",
+    "description": "2D pixel art forest environment — character, backgrounds, tileset, decorations",
+    "basePath": "assets/oakwoods",
+    "targetEngine": "Phaser 4",
+    "pixelArt": true,
+    "resolution": { "width": 320, "height": 180 }
+  },
+
+  "images": [
+    {
+      "key": "oakwoods-bg-layer1",
+      "type": "image",
+      "path": "assets/oakwoods/background/background_layer_1.png",
+      "width": 320,
+      "height": 180,
+      "category": "background",
+      "scrollFactor": 0.1,
+      "description": "Sky / distant background layer (furthest)"
+    },
+    {
+      "key": "oakwoods-bg-layer2",
+      "type": "image",
+      "path": "assets/oakwoods/background/background_layer_2.png",
+      "width": 320,
+      "height": 180,
+      "category": "background",
+      "scrollFactor": 0.3,
+      "description": "Mid-distance forest layer"
+    },
+    {
+      "key": "oakwoods-bg-layer3",
+      "type": "image",
+      "path": "assets/oakwoods/background/background_layer_3.png",
+      "width": 320,
+      "height": 180,
+      "category": "background",
+      "scrollFactor": 0.5,
+      "description": "Near forest layer (closest)"
+    },
+    {
+      "key": "oakwoods-fence1",
+      "type": "image",
+      "path": "assets/oakwoods/decorations/fence_1.png",
+      "width": 73,
+      "height": 19,
+      "category": "decoration"
+    },
+    {
+      "key": "oakwoods-fence2",
+      "type": "image",
+      "path": "assets/oakwoods/decorations/fence_2.png",
+      "width": 72,
+      "height": 19,
+      "category": "decoration"
+    },
+    {
+      "key": "oakwoods-grass1",
+      "type": "image",
+      "path": "assets/oakwoods/decorations/grass_1.png",
+      "width": 8,
+      "height": 3,
+      "category": "decoration"
+    },
+    {
+      "key": "oakwoods-grass2",
+      "type": "image",
+      "path": "assets/oakwoods/decorations/grass_2.png",
+      "width": 10,
+      "height": 5,
+      "category": "decoration"
+    },
+    {
+      "key": "oakwoods-grass3",
+      "type": "image",
+      "path": "assets/oakwoods/decorations/grass_3.png",
+      "width": 9,
+      "height": 4,
+      "category": "decoration"
+    },
+    {
+      "key": "oakwoods-lamp",
+      "type": "image",
+      "path": "assets/oakwoods/decorations/lamp.png",
+      "width": 23,
+      "height": 57,
+      "category": "decoration"
+    },
+    {
+      "key": "oakwoods-rock1",
+      "type": "image",
+      "path": "assets/oakwoods/decorations/rock_1.png",
+      "width": 20,
+      "height": 11,
+      "category": "decoration"
+    },
+    {
+      "key": "oakwoods-rock2",
+      "type": "image",
+      "path": "assets/oakwoods/decorations/rock_2.png",
+      "width": 27,
+      "height": 12,
+      "category": "decoration"
+    },
+    {
+      "key": "oakwoods-rock3",
+      "type": "image",
+      "path": "assets/oakwoods/decorations/rock_3.png",
+      "width": 45,
+      "height": 18,
+      "category": "decoration"
+    },
+    {
+      "key": "oakwoods-shop",
+      "type": "image",
+      "path": "assets/oakwoods/decorations/shop.png",
+      "width": 118,
+      "height": 98,
+      "category": "decoration",
+      "description": "Static shop building (use oakwoods-shop-anim for animated version)"
+    },
+    {
+      "key": "oakwoods-sign",
+      "type": "image",
+      "path": "assets/oakwoods/decorations/sign.png",
+      "width": 22,
+      "height": 31,
+      "category": "decoration"
+    }
+  ],
+
+  "spritesheets": [
+    {
+      "key": "oakwoods-char-blue",
+      "type": "spritesheet",
+      "path": "assets/oakwoods/character/char_blue.png",
+      "category": "character",
+      "frameSize": { "width": 56, "height": 56 },
+      "sheetSize": { "width": 448, "height": 392 },
+      "layout": { "columns": 8, "rows": 7 },
+      "totalFrames": 56,
+      "hitbox": { "width": 20, "height": 38, "offsetX": 18, "offsetY": 16 },
+      "animations": [
+        {
+          "key": "char-blue-idle",
+          "description": "Idle stance",
+          "frames": { "start": 0, "end": 5 },
+          "emptyFrames": [6, 7],
+          "frameRate": 8,
+          "repeat": -1
+        },
+        {
+          "key": "char-blue-attack",
+          "description": "Sword attack — locks state until complete",
+          "frames": { "start": 8, "end": 13 },
+          "emptyFrames": [14, 15],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        {
+          "key": "char-blue-run",
+          "description": "Running",
+          "frames": { "start": 16, "end": 21 },
+          "emptyFrames": [22, 23],
+          "frameRate": 10,
+          "repeat": -1
+        },
+        {
+          "key": "char-blue-jump",
+          "description": "Jump ascent",
+          "frames": { "start": 28, "end": 31 },
+          "frameRate": 10,
+          "repeat": 0
+        },
+        {
+          "key": "char-blue-fall",
+          "description": "Falling / descending",
+          "frames": { "start": 35, "end": 37 },
+          "frameRate": 10,
+          "repeat": 0
+        },
+        {
+          "key": "char-blue-roll",
+          "description": "Roll / dodge",
+          "frames": { "start": 42, "end": 48 },
+          "frameRate": 12,
+          "repeat": 0
+        },
+        {
+          "key": "char-blue-death",
+          "description": "Death — plays once",
+          "frames": { "start": 49, "end": 55 },
+          "frameRate": 8,
+          "repeat": 0
+        }
+      ]
+    },
+    {
+      "key": "oakwoods-shop-anim",
+      "type": "spritesheet",
+      "path": "assets/oakwoods/decorations/shop_anim.png",
+      "category": "decoration",
+      "frameSize": { "width": 118, "height": 128 },
+      "sheetSize": { "width": 708, "height": 128 },
+      "layout": { "columns": 6, "rows": 1 },
+      "totalFrames": 6,
+      "animations": [
+        {
+          "key": "shop-idle",
+          "description": "Ambient shop animation (smoke, lantern flicker)",
+          "frames": { "start": 0, "end": 5 },
+          "frameRate": 8,
+          "repeat": -1
+        }
+      ]
+    }
+  ],
+
+  "tilesets": [
+    {
+      "key": "oakwoods-tileset",
+      "type": "tileset",
+      "path": "assets/oakwoods/oak_woods_tileset.png",
+      "tileSize": { "width": 24, "height": 24 },
+      "sheetSize": { "width": 504, "height": 360 },
+      "layout": { "columns": 21, "rows": 15 },
+      "totalTiles": 315,
+      "margin": 0,
+      "spacing": 0,
+      "description": "Main tileset — platforms, terrain, structural elements"
+    }
+  ],
+
+  "phaser4": {
+    "description": "Phaser 4 preload snippet — paste into your Scene.preload()",
+    "preload": {
+      "images": [
+        "this.load.image('oakwoods-bg-layer1', 'assets/oakwoods/background/background_layer_1.png');",
+        "this.load.image('oakwoods-bg-layer2', 'assets/oakwoods/background/background_layer_2.png');",
+        "this.load.image('oakwoods-bg-layer3', 'assets/oakwoods/background/background_layer_3.png');",
+        "this.load.image('oakwoods-fence1',    'assets/oakwoods/decorations/fence_1.png');",
+        "this.load.image('oakwoods-fence2',    'assets/oakwoods/decorations/fence_2.png');",
+        "this.load.image('oakwoods-grass1',    'assets/oakwoods/decorations/grass_1.png');",
+        "this.load.image('oakwoods-grass2',    'assets/oakwoods/decorations/grass_2.png');",
+        "this.load.image('oakwoods-grass3',    'assets/oakwoods/decorations/grass_3.png');",
+        "this.load.image('oakwoods-lamp',      'assets/oakwoods/decorations/lamp.png');",
+        "this.load.image('oakwoods-rock1',     'assets/oakwoods/decorations/rock_1.png');",
+        "this.load.image('oakwoods-rock2',     'assets/oakwoods/decorations/rock_2.png');",
+        "this.load.image('oakwoods-rock3',     'assets/oakwoods/decorations/rock_3.png');",
+        "this.load.image('oakwoods-shop',      'assets/oakwoods/decorations/shop.png');",
+        "this.load.image('oakwoods-sign',      'assets/oakwoods/decorations/sign.png');"
+      ],
+      "spritesheets": [
+        "this.load.spritesheet('oakwoods-char-blue',   'assets/oakwoods/character/char_blue.png',           { frameWidth: 56,  frameHeight: 56  });",
+        "this.load.spritesheet('oakwoods-shop-anim',   'assets/oakwoods/decorations/shop_anim.png',         { frameWidth: 118, frameHeight: 128 });"
+      ],
+      "tilesets": [
+        "this.load.image('oakwoods-tileset', 'assets/oakwoods/oak_woods_tileset.png');"
+      ]
+    },
+    "animationCreate": {
+      "description": "Phaser 4 animation definitions — paste into Scene.create()",
+      "code": [
+        "this.anims.create({ key: 'char-blue-idle',   frames: this.anims.generateFrameNumbers('oakwoods-char-blue', { start: 0,  end: 5  }), frameRate: 8,  repeat: -1 });",
+        "this.anims.create({ key: 'char-blue-attack', frames: this.anims.generateFrameNumbers('oakwoods-char-blue', { start: 8,  end: 13 }), frameRate: 12, repeat: 0  });",
+        "this.anims.create({ key: 'char-blue-run',    frames: this.anims.generateFrameNumbers('oakwoods-char-blue', { start: 16, end: 21 }), frameRate: 10, repeat: -1 });",
+        "this.anims.create({ key: 'char-blue-jump',   frames: this.anims.generateFrameNumbers('oakwoods-char-blue', { start: 28, end: 31 }), frameRate: 10, repeat: 0  });",
+        "this.anims.create({ key: 'char-blue-fall',   frames: this.anims.generateFrameNumbers('oakwoods-char-blue', { start: 35, end: 37 }), frameRate: 10, repeat: 0  });",
+        "this.anims.create({ key: 'char-blue-roll',   frames: this.anims.generateFrameNumbers('oakwoods-char-blue', { start: 42, end: 48 }), frameRate: 12, repeat: 0  });",
+        "this.anims.create({ key: 'char-blue-death',  frames: this.anims.generateFrameNumbers('oakwoods-char-blue', { start: 49, end: 55 }), frameRate: 8,  repeat: 0  });",
+        "this.anims.create({ key: 'shop-idle',        frames: this.anims.generateFrameNumbers('oakwoods-shop-anim', { start: 0,  end: 5  }), frameRate: 8,  repeat: -1 });"
+      ]
+    }
+  }
+}

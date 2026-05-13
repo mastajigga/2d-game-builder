@@ -1,0 +1,21 @@
+{
+  "version": 6,
+  "worldW": 4000,
+  "worldH": 900,
+  "backgroundColor": "#16213e",
+  "backgroundLayers": [
+    { "id": "far", "label": "Far", "parallax": 0.1, "depth": -120, "alpha": 1, "visible": true, "tint": "#334466" },
+    { "id": "mid", "label": "Mid", "parallax": 0.4, "depth": -80, "alpha": 1, "visible": true },
+    { "id": "near", "label": "Near", "parallax": 0.9, "depth": -40, "alpha": 1, "visible": true }
+  ],
+  "backgroundShapes": [],
+  "entities": [],
+  "playerStats": {
+    "maxHp": 8,
+    "jumpForce": 1040,
+    "moveSpeed": 320,
+    "attackDamage": 1,
+    "attackRange": 160,
+    "attackCooldownMs": 500
+  }
+}

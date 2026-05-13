@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orion & Sirius Studio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #1a1a1a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        overflow: hidden;
+      }
+      #game-container {
+        width: 100vw;
+        height: 100vh;
+        image-rendering: pixelated;
+        image-rendering: crisp-edges;
+      }
+      canvas {
+        image-rendering: pixelated;
+        image-rendering: crisp-edges;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Main menu (shown on launch) -->
+    <div id="main-menu"></div>
+
+    <!-- Game canvas (hidden on launch, shown when entering editor/game) -->
+    <div id="game-container"></div>
+
+    <!-- Editor overlay (shown above canvas) -->
+    <div id="editor-overlay">
+      <div id="editor-palette"></div>
+      <div id="editor-toolbar"></div>
+      <div id="properties-panel"></div>
+    </div>
+
+    <!-- Return to menu button (visible in editor/game) -->
+    <div id="return-to-menu" title="Retour au menu">←</div>
+
+    <!-- Test menu modal -->
+    <div class="test-menu-overlay" id="test-menu-overlay"></div>
+    <div id="test-menu"></div>
+
+    <!-- Victory overlay -->
+    <div id="victory-overlay">
+      <h1 class="victory-title">NIVEAU TERMINÉ</h1>
+      <p class="victory-sub">Félicitations !</p>
+      <button id="victory-resume" class="victory-btn">Retour au menu</button>
+    </div>
+
+    <!-- Minimap canvas -->
+    <canvas id="minimap" width="200" height="150"></canvas>
+
+    <!-- World settings panel -->
+    <div id="world-settings"></div>
+
+    <!-- Prefab panel -->
+    <div id="prefab-panel"></div>
+
+    <!-- World hub -->
+    <div id="world-hub"></div>
+
+    <!-- Test Center full page -->
+    <div id="test-page"></div>
+
+    <!-- Animation Lab full page -->
+    <div id="animation-page"></div>
+
+    <!-- Stage Builder full page -->
+    <div id="stage-builder">
+      <div id="sb-toolbar"></div>
+      <div id="sb-main">
+        <div id="sb-left-panel"></div>
+        <div id="sb-canvas"></div>
+        <div id="sb-right-panel"></div>
+      </div>
+      <div id="sb-status"></div>
+    </div>
+
+    <!-- Prefab Builder full page -->
+    <div id="prefab-builder">
+      <div id="pfb-toolbar"></div>
+      <div id="pfb-main">
+        <div id="pfb-left-panel"></div>
+        <div id="pfb-canvas"></div>
+        <div id="pfb-right-panel"></div>
+      </div>
+      <div id="pfb-status"></div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
