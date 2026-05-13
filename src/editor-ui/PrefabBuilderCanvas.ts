@@ -194,17 +194,13 @@ class BuilderScene extends Phaser.Scene {
         return;
       }
 
-      // Check if clicking on existing entity → start drag
+      // Check if clicking on existing entity → start drag (use sprite bounds)
       for (let i = this.entities.length - 1; i >= 0; i--) {
-        const e = this.entities[i];
-        const def = CATALOG_BY_ID[e.assetId];
-        const ew = e.width ?? def?.defaultWidth ?? 32;
-        const eh = e.height ?? def?.defaultHeight ?? 32;
-        // Entity coords: center-X, bottom-Y. Bounds: left=center-w/2, top=bottom-h
-        if (wx >= e.x - ew/2 && wx <= e.x + ew/2 && wy >= e.y - eh && wy <= e.y) {
+        const spr = this.entitySprites[i];
+        if (spr && spr.getBounds().contains(wx, wy)) {
           this.draggingIndex = i;
-          this.dragOffX = e.x - wx;
-          this.dragOffY = e.y - wy;
+          this.dragOffX = this.entities[i].x - wx;
+          this.dragOffY = this.entities[i].y - wy;
           return;
         }
       }
@@ -265,11 +261,8 @@ class BuilderScene extends Phaser.Scene {
       const wx = Math.round((this.cameras.main.scrollX + p.x / this.cameras.main.zoom) / SNAP) * SNAP;
       const wy = Math.round((this.cameras.main.scrollY + p.y / this.cameras.main.zoom) / SNAP) * SNAP;
       for (let i = this.entities.length - 1; i >= 0; i--) {
-        const e = this.entities[i];
-        const def = CATALOG_BY_ID[e.assetId];
-        const ew = e.width ?? def?.defaultWidth ?? 32;
-        const eh = e.height ?? def?.defaultHeight ?? 32;
-        if (wx >= e.x - ew/2 && wx <= e.x + ew/2 && wy >= e.y - eh && wy <= e.y) {
+        const spr = this.entitySprites[i];
+        if (spr && spr.getBounds().contains(wx, wy)) {
           this.onContextMenu?.(i, p.x, p.y);
           return;
         }
