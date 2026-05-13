@@ -1,11 +1,18 @@
 import { defineConfig } from "vite";
-import { readFileSync } from "fs";
-import { resolve } from "path";
+import { execSync } from "child_process";
 
-const pkg = JSON.parse(readFileSync(resolve(__dirname, "package.json"), "utf-8"));
+function getVersion(): string {
+  try {
+    const hash = execSync("git rev-parse --short HEAD", { encoding: "utf-8" }).trim();
+    const date = new Date().toISOString().slice(0, 10).replace(/-/g, "");
+    return `${date}-${hash}`;
+  } catch {
+    return "dev";
+  }
+}
 
 export default defineConfig({
   define: {
-    __APP_VERSION__: JSON.stringify(pkg.version),
+    __APP_VERSION__: JSON.stringify(getVersion()),
   },
 });
