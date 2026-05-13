@@ -7,6 +7,10 @@ import { editorBus, onEditorEvent } from "./editor-ui/EditorBridge";
 import { getSlot } from "./save-system/SaveManager";
 import type { SaveSlot } from "./save-system/SaveSlot";
 
+// Version injected by Vite define
+declare const __APP_VERSION__: string;
+document.getElementById("app-version")!.textContent = `v${__APP_VERSION__}`;
+
 // ─── Bootstrap state ──────────────────────────────────────────────────────────────────────────────────
 
 const gameContainer = document.getElementById("game-container")!;

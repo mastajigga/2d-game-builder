@@ -2724,3 +2724,15 @@ input[type="color"].prop-input-color::-webkit-color-swatch {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+/* ── Version badge (bottom-right) ────────────────────────────────────── */
+#app-version {
+  position: fixed;
+  bottom: 4px;
+  right: 6px;
+  font-size: 9px;
+  color: rgba(255,255,255,0.25);
+  font-family: monospace;
+  pointer-events: none;
+  z-index: 9999;
+}
